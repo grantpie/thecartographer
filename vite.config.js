@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/thecartographer/' ,
+    base: 'https://grantpie.github.io/thecartographer/' ,
   plugins: [vue()],
   resolve: {
     alias: {
