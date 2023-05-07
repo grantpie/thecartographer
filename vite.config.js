@@ -8,6 +8,7 @@ export default defineConfig({
     base: '/thecartographer/' ,
   plugins: [vue()],
   resolve: {
+
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
