@@ -1,9 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import DefaultView from '../views/DefaultView.vue'
 import HomeView from '../views/template1/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+        path: '/',
+        name: 'default',
+        component: DefaultView
+    },
     {
       path: '/template1/',
       name: 'home',
