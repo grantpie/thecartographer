@@ -89,25 +89,17 @@
 
 <style scoped>
 
-.home-wrapper{
-    position: absolute;
-    border: solid thick black;
-    top: 80vh;
-
-}
-
 .section-1{
     position: absolute;
-    height: 80vh;
+    min-height: 80vh;
     top: 0;
     left: 0;
 
 }
 
 .img-container {
-
-    height: 80vh;
-    width: 100vw;
+    min-height: 80vh;
+    min-width: 100vw;
     z-index: -3;
 }
 
@@ -118,8 +110,8 @@
 
 .overlay {
     position: absolute;
-    height: 80vh;
-    width: 100vw;
+    min-height: 80vh;
+    min-width: 100vw;
     opacity: 0.3;
     background-color: grey;
     z-index: -2;
