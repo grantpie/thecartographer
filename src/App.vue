@@ -9,40 +9,43 @@ import InstagramIcon from './components/icons/IconInstagram.vue'
 <template>
 
 <header>
+    <!--
 
-    <nav class=" navbar navbar-expand-lg">
+        theme 2 : navbar-dark
 
-        <div class="container-fluid">
+     -->
+    <nav class="navbar navbar-dark navbar-expand-lg  ">
 
-            <a class="navbar-brand template-1--title" href="#">The Cartographer</a>
+        <div class="container-fluid ">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand title" href="#">The Cartographer</a>
 
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon "></span>
 
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
 
                 <ul class="navbar-nav me-auto me-lg-0 ms-md-auto mb-2 mb-md-0">
 
                     <li class="nav-item">
 
-                        <a class="nav-link active" aria-current="page" href="/template1/">Home</a>
+                        <a class="nav-link active text-light" aria-current="page" href="/template1/">Home</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active text-light" aria-current="page" href="/template1/about">About</a>
 
                     </li>
 
 
                     <li class="nav-item">
 
-                        <a class="nav-link active" aria-current="page" href="/template1/about">About</a>
-
-                    </li>
-
-
-                    <li class="nav-item">
-
-                        <a class="nav-link active" aria-current="page" href="/template1/contact">Contact</a>
+                        <a class="nav-link active text-light" aria-current="page" href="/template1/contact">Contact</a>
 
                     </li>
 
@@ -121,65 +124,82 @@ class="bg-dark"
 
 <style>
 
+/* Theme 2 */
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Theme 2 */
+
 header {
     padding: 4vw;
 }
 
 main {
-    padding-left: 4vw;
-    padding-right: 4vw;
+    /*
+        theme1:
+        padding-left: 4vw;
+        padding-right: 4vw;
+    */
 }
 
 footer {
     padding-top: 4vw;
     padding-left: 4vw;
     padding-right: 4vw;
+
+    /* theme 2 ? */
+
+    margin-top: auto;
+
+    /* theme 2 */
 }
 
 .navbar-toggler {
     border: none;
 }
 
- .img-square--container{
-        height: 45vh;
-    }
+.img-square--container{
+    height: 45vh;
+}
 
-    .img-square--wrapper{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
+.img-square--wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
-    .img{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-position: 50% 50%;
-        object-fit: cover;
-    }
-
-
-    .row {
-        padding-top: calc(45vmax / 10);
-        padding-bottom: calc(45vmax / 10);
-    }
-
-    .carousel-inner{
-        height: 75vh;
-    }
-
-    .carousel-item{
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
+.img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
 
 
-    .carousel .carousel-indicators button {
-        width: 10px;
-        height: 10px;
-        border-radius: 100%;
+.row {
+    padding-top: calc(45vmax / 10);
+    padding-bottom: calc(45vmax / 10);
+}
 
-    }
+.carousel-inner{
+    height: 75vh;
+}
+
+.carousel-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+
+}
 
 </style>

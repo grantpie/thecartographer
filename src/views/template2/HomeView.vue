@@ -3,139 +3,64 @@
 <template>
 
 
-    <main>
+    <main
+    class="text-light"
+    >
 
         <div
-        class="row"
+        class="section-1 pt-0 border d-flex  align-items-stretch"
         >
-
             <div
-            class="col-12"
+            class="img-container"
             >
 
-                <h1 class="title text-center p-4">Short descriptive text, no more than three-ish lines.</h1>
+                <img :src="img1"  class="img" alt="..."/>
+
+            </div>
+
+            <div
+            class="overlay bg-light"></div>
+
+            <div
+            class="content px-4">
+
+                <h1 class="title h1">Protecting natural habitats from extinction.</h1>
+
+                <button type="button" class="btn btn-primary p-3 mt-2">Call to Action</button>
+
+            </div>
+
+
+        </div>
+
+        <!--section-->
+        <div
+        class="bg-primary"
+        >
+
+            <!--content-->
+            <div
+            class="p-4">
+
+                <h2>I'm here....</h2>
 
             </div>
 
         </div>
 
+        <!--section-->
         <div
-        class="row">
-
-            <div
-            class="col-12"
-            >
-
-                <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-
-                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-
-                            <img :src="img1"  class="img" alt="..."/>
-
-                        </div>
-
-                        <div class="carousel-item gallery-item">
-
-                            <img :src="img2" class="img" alt="...">
-
-                        </div>
-
-                        <div class="carousel-item gallery-item">
-
-                            <img :src="img3" class="img" alt="...">
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div
-        class="row"
+        class="bg-secondary"
         >
 
+            <!--content-->
             <div
-            class="col-12 col-md-6 py-4"
-            >
+            class="p-4">
 
-                <h2 class="title">Fictional and Fantasy Maps</h2>
-
-                <p class="pb-2 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et convallis orci, eu auctor augue. Ut vel mi malesuada, convallis sem sed, placerat arcu.</p>
+                <h2>I'm after here....</h2>
 
             </div>
 
-            <div
-            class="col-12 col-md-6 py-4 "
-            >
-
-                <div
-                class="img-square--container"
-                >
-
-                    <div
-                    class="img-square--wrapper"
-                    >
-
-                        <img :src="img2" class="img"  alt="..." width="100%" height="100%">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div
-        class="row"
-        >
-
-            <div
-            class="col-12 col-md-6 py-4 order-md-2"
-            >
-
-                <h2 class="title">Non-Fictional and Academic Maps</h2>
-
-                <p class="pb-2 py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et convallis orci, eu auctor augue. Ut vel mi malesuada, convallis sem sed, placerat arcu.</p>
-
-            </div>
-
-            <div
-            class="col-12 col-md-6 py-4 order-md-1"
-            >
-
-                <div
-                class="img-square--container"
-                >
-
-                    <div
-                    class="img-square--wrapper"
-                    >
-
-                        <img :src="img3" class="img"  alt="..." width="100%" height="100%">
-
-                    </div>
-
-                </div>
-
-            </div>
 
         </div>
 
@@ -161,3 +86,44 @@
     }
 
 </script>
+
+<style scoped>
+
+.home-wrapper{
+    position: absolute;
+    border: solid thick black;
+    top: 80vh;
+
+}
+
+.section-1{
+    position: absolute;
+    height: 80vh;
+    top: 0;
+    left: 0;
+
+}
+
+.img-container {
+
+    height: 80vh;
+    width: 100vw;
+    z-index: -3;
+}
+
+.content {
+    position: absolute;
+    top: 40vh;
+}
+
+.overlay {
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+    opacity: 0.3;
+    background-color: grey;
+    z-index: -2;
+}
+
+
+</style>
