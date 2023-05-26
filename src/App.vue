@@ -124,17 +124,15 @@ class="bg-dark"
 
 <style>
 
-/* Theme 2 */
-#app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-/* Theme 2 */
+/*  template 2 header styles */
 
 header {
-    padding: 4vw;
+    position: absolute;
+    width: 100vw;
+       z-index: 1
 }
+
+/*  template 2 header styles */
 
 main {
     /*
@@ -150,7 +148,7 @@ footer {
     padding-right: 4vw;
 
     /* theme 2 ? */
-
+    position: relative;
     margin-top: auto;
 
     /* theme 2 */

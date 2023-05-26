@@ -4,65 +4,65 @@
 
 
     <main
+    id="page"
     class="text-light"
     >
 
-        <div
-        class="section-1 pt-0 border d-flex  align-items-stretch"
-        >
-            <div
-            class="img-container"
-            >
+        <article class="sections">
 
-                <img :src="img1"  class="img" alt="..."/>
+            <section class="section section-full-bleed  border ">
 
-            </div>
+                <div
+                class="section-border d-flex flex-column justify-content-end"
+                >
 
-            <div
-            class="overlay bg-light"></div>
+                    <img :src="img1"  class="img" alt="..."/>
 
-            <div
-            class="content px-4">
+                    <div class="section-background-overlay"></div>
 
-                <h1 class="title h1">Protecting natural habitats from extinction.</h1>
-
-                <button type="button" class="btn btn-primary p-3 mt-2">Call to Action</button>
-
-            </div>
+                    <div
+                    class="content position-relative border border-primary"
+                    >
 
 
-        </div>
+                        <h1 class="title h1">Protecting natural habitats from extinction.</h1>
 
-        <!--section-->
-        <div
-        class="bg-primary"
-        >
+                        <button type="button" class="btn btn-primary p-3 mt-2">Call to Action</button>
 
-            <!--content-->
-            <div
-            class="p-4">
+                    </div>
 
-                <h2>I'm here....</h2>
-
-            </div>
-
-        </div>
-
-        <!--section-->
-        <div
-        class="bg-secondary"
-        >
-
-            <!--content-->
-            <div
-            class="p-4">
-
-                <h2>I'm after here....</h2>
-
-            </div>
+                </div>
 
 
-        </div>
+
+            </section>
+
+            <section class="section  bg-primary">
+
+                <div
+                class="content"
+                >
+
+                    <h2>Next section.</h2>
+
+                </div>
+
+            </section>
+
+            <section class="section  bg-primary">
+
+                <div
+                class="content"
+                >
+
+                    <h2>Next section.</h2>
+
+                </div>
+
+            </section>
+
+        </article>
+
 
     </main>
 
@@ -89,32 +89,52 @@
 
 <style scoped>
 
-.section-1{
-    position: absolute;
+.section-full-bleed{
+   min-height: 80vh;
+   width: 100vw;
+    position: relative;
+   top: 0;
+   left: 0;
+}
+
+.section-border {
+    position: relative;
+    border:solid thick black;
     min-height: 80vh;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
 
 }
 
-.img-container {
-    min-height: 80vh;
-    min-width: 100vw;
-    z-index: -3;
+.section-background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+
 }
 
-.content {
+.section-background-overlay {
     position: absolute;
-    top: 40vh;
-}
-
-.overlay {
-    position: absolute;
-    min-height: 80vh;
-    min-width: 100vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
     opacity: 0.3;
-    background-color: grey;
-    z-index: -2;
+}
+
+.img {
+    object-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
 }
 
 
