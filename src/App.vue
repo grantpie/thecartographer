@@ -14,7 +14,7 @@ import InstagramIcon from './components/icons/IconInstagram.vue'
         theme 2 : navbar-dark
 
      -->
-    <nav class="navbar navbar-dark navbar-expand-lg  ">
+    <nav class="navbar navbar-dark navbar-expand-lg  p-4 lh-base">
 
         <div class="container-fluid ">
 
@@ -123,6 +123,7 @@ class="bg-dark"
 </template>
 
 <style>
+
 
 /*  template 2 header styles */
 

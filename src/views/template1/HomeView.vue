@@ -13,7 +13,7 @@
             class="col-12"
             >
 
-                <h1 class="title text-center p-4">Short descriptive text, no more than three-ish lines.</h1>
+                <h1 class="title text-center p-4">Unlock the World's Beauty with Expert Cartography Solutions.</h1>
 
             </div>
 
